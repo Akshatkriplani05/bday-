@@ -1,0 +1,210 @@
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #010101;
+    color: #000000;
+    text-align: center;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 150%;
+    padding: 0;
+    background: url('./004.png')  no-repeat;
+    background-size:100% ;
+    overflow-y:scroll;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff6f;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-height: fit-content;
+    overflow-y: hidden;
+}
+
+h1 {
+    color: #f70542;
+    font-family:cursive;
+    font-weight: 300;
+    font-size: 250%;
+}
+
+.message {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff1493;
+    color: rgba(255, 255, 255, 0.737);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: x-large;
+}
+
+.buttons button:hover {
+    background-color: #160f13;
+}
+
+.hidden {
+    margin-top: 20px;
+}
+
+#birthday-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border: 5px solid #f0ea6f; /* Pink border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+/* Updated CSS for the contain section with multiple text boxes */
+.contain {
+    background: url('./person.png') no-repeat center center;
+    background-size: cover;
+    padding: 20px;
+    padding-top:50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
+    min-height: 1000px; /* Adjust height as needed */
+    padding: 0px;
+}
+
+
+
+.text-box {
+    background-color: rgba(255, 255, 255, 0.547);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Space between the boxes */
+}
+
+.left-box {
+    text-align: left;
+}
+
+.right-box {
+    text-align: right;
+}
+
+
+
+.scroll-arrow, .scroll-arrow_a {
+    font-size: 40px;
+    color: #ff69b4; /* Pink color for the arrow */
+    cursor: pointer;
+    position: fixed; /* Keep the arrow in a fixed position */
+    bottom: 60px; /* Position it at the bottom of the page */
+    right: 20px; /* Position it at the right of the page */
+    background-color: rgba(255, 255, 255, 0.8); /* Add a background for better visibility */
+    padding: 15px;
+    border-radius: 50%; /* Make the background circular */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.893);
+    transition: background-color 0.3s;
+    margin-bottom: 15px; /* Space between the arrows */
+}
+
+
+.scroll-arrow:hover, .scroll-arrow_a:hover {
+    background-color: #ff1493; /* Darker pink on hover */
+}
+
+.heart {
+    z-index : 999;
+    position : absolute;
+ }
+ .heart:before,
+ .heart:after {
+    content : "";
+    background-color : #fc2a58;
+    position : absolute;
+    height : 30px;
+    width : 45px;
+    border-radius : 15px 0px 0px 15px;
+ }
+ .heart:before {
+    transform : rotate(45deg);
+ }
+ .heart:after {
+    left : 10.5px;
+    transform : rotate(135deg);
+ }
+ @keyframes heartfade {
+    0% {
+     opacity : 1;
+    }
+    50% {
+     opacity : 0;
+    }
+ } 
+ .heart {
+    z-index : 999;
+    animation : heartfade 10s linear;
+    position : absolute;
+ }
+
+ /* Footer Styles */
+footer {
+    background-color: #010101; /* Dark background to match the body */
+    color: #ffffff; /* White text for contrast */
+    text-align: center; /* Center the text */
+    padding: 10px; /* Add some padding */
+    position: relative; /* Fix the footer at the bottom of the page */
+    bottom: 0; /* Position it at the bottom */
+    width: 100%; /* Make it span the full width */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+    font-size: 16px; /* Adjust the font size as needed */
+}
+#hh{
+    font-size: 400%;
+    color:#efeaec97;
+    font-display: center;
+}
+.btn {
+    background-color: #ffb6c128;
+    border: 2px solid #ff69b4;
+    border-radius: 25px;
+    color: white;
+    padding: 15px 30px;
+    font-size: x-large;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 10px; /* Adjust margin as needed */
+    display: inline-block;
+    margin-top: 30%; /* Align buttons horizontally */
+}
+
+/* Container for buttons */
+.btn-container {
+    text-align: center; /* Center-align buttons */
+    margin: 20px auto; /* Adjust margin for spacing around the button group */
+}
+
+/* Optional: Add hover effects */
+.btn:hover {
+    background-color: #ff69b4; /* Change background color on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+
+.btn:hover {
+    background-color: #ff69b4ab;
+    transform: scale(1.05);
+}
+
+.btn:active {
+    background-color: #ff1493;
+    transform: scale(0.95);
+}
